@@ -1,5 +1,5 @@
-<MPD xmlns:sea="urn:mpeg:dash:schema:sea:2012" type="static" maxSegmentDuration="PT5.000S" profiles="urn:mpeg:dash:profile:isoff-live:2011" mediaPresentationDuration="PT0H0M321.769S" minBufferTime="PT4.500S" xmlns="urn:mpeg:DASH:schema:MPD:2011">
-     <BaseURL>https://cdn-metaservice.azureedge.net/transform/</BaseURL>
+<MPD xmlns:sea="urn:mpeg:dash:schema:sea:2012" type="static" maxSegmentDuration="PT5.000S" profiles="urn:mpeg:dash:profile:isoff-live:2011" mediaPresentationDuration="PT0H0M32.995S" minBufferTime="PT4.500S" xmlns="urn:mpeg:DASH:schema:MPD:2011">
+    <BaseURL>https://cdn-metaservice.azureedge.net/transform/</BaseURL>
     <Period>
         <AdaptationSet id="0" contentType="audio" mimeType="audio/mp4" segmentAlignment="true" bitstreamSwitching="true" codecs="mp4a.40.2">
             <ContentProtection schemeIdUri="urn:mpeg:dash:sea:2012">
@@ -7,14 +7,14 @@
                 <sea:KeySystem keySystemUri="urn:mpeg:dash:sea:keysys:http:2013" />
                 <sea:CryptoPeriod keyUriTemplate="https://centralus2.mediad.svc.ms/transform/ProtectionKey?provider=Url&amp;docId=kartik" IV="0xDEDE5C9DE1D22B107CF496F3C5E70153" />
             </ContentProtection>
-            <SegmentTemplate timescale="44100" initialization="videotranscode?provider=Url&amp;docId=https%3a%2f%2fmetastoragecentralus.blob.core.windows.net%2ftestfiles%2fVideos%2fIgnite.wmv&amp;format=dash&amp;track=audio&amp;inputFormat=mp4&amp;correlationid=394537d3-b4dc-4070-91bf-83a95f954794&amp;transcodeAhead=0&amp;disableCache=1&amp;enableEncryption=1&amp;part=initsegment&amp;quality=audhigh" media="videotranscode?provider=Url&amp;docId=https%3a%2f%2fmetastoragecentralus.blob.core.windows.net%2ftestfiles%2fVideos%2fIgnite.wmv&amp;format=dash&amp;track=audio&amp;inputFormat=mp4&amp;correlationid=394537d3-b4dc-4070-91bf-83a95f954794&amp;transcodeAhead=0&amp;disableCache=1&amp;enableEncryption=1&amp;part=mediasegment&amp;quality=audhigh&amp;segmentTime=$Time$&amp;audioDuration=220500">
+            <SegmentTemplate timescale="48000" initialization="videotranscode?provider=Url&amp;docId=https%3a%2f%2fmetastoragecentralus.blob.core.windows.net%2ftestfiles%2fVideos%2fbigbuckbunny_trailer.mov&amp;format=dash&amp;track=audio&amp;inputFormat=mp4&amp;correlationid=02527ae5-8acd-426d-9f0f-8cba60ddcfb6&amp;transcodeAhead=0&amp;disableCache=1&amp;enableEncryption=1&amp;part=initsegment&amp;quality=audhigh" media="videotranscode?provider=Url&amp;docId=https%3a%2f%2fmetastoragecentralus.blob.core.windows.net%2ftestfiles%2fVideos%2fbigbuckbunny_trailer.mov&amp;format=dash&amp;track=audio&amp;inputFormat=mp4&amp;correlationid=02527ae5-8acd-426d-9f0f-8cba60ddcfb6&amp;transcodeAhead=0&amp;disableCache=1&amp;enableEncryption=1&amp;part=mediasegment&amp;quality=audhigh&amp;segmentTime=$Time$&amp;audioDuration=240000">
                 <SegmentTimeline>
-                    <S d="220500" r="63" />
-                    <S d="78013" />
+                    <S d="240000" r="5" />
+                    <S d="143760" />
                 </SegmentTimeline>
             </SegmentTemplate>
-            <Representation id="audmed" audioSamplingRate="44100" bandwidth="128000" codecs="mp4a.40.2" />
-            <Representation id="audhigh" audioSamplingRate="44100" bandwidth="192000" codecs="mp4a.40.2" />
+            <Representation id="audmed" audioSamplingRate="48000" bandwidth="128000" codecs="mp4a.40.2" />
+            <Representation id="audhigh" audioSamplingRate="48000" bandwidth="192000" codecs="mp4a.40.2" />
         </AdaptationSet>
         <AdaptationSet id="1" contentType="video" mimeType="video/mp4" segmentAlignment="true" bitstreamSwitching="true" maxFrameRate="25/1" maxWidth="1920" maxHeight="1080" codecs="avc1.4d0028">
             <ContentProtection schemeIdUri="urn:mpeg:dash:sea:2012">
@@ -22,10 +22,10 @@
                 <sea:KeySystem keySystemUri="urn:mpeg:dash:sea:keysys:http:2013" />
                 <sea:CryptoPeriod keyUriTemplate="https://centralus2.mediad.svc.ms/transform/ProtectionKey?provider=Url&amp;docId=kartik" IV="0xDEDE5C9DE1D22B107CF496F3C5E70153" />
             </ContentProtection>
-            <SegmentTemplate timescale="25000" initialization="videotranscode?provider=Url&amp;docId=https%3a%2f%2fmetastoragecentralus.blob.core.windows.net%2ftestfiles%2fVideos%2fIgnite.wmv&amp;format=dash&amp;track=video&amp;inputFormat=mp4&amp;correlationid=394537d3-b4dc-4070-91bf-83a95f954794&amp;transcodeAhead=0&amp;disableCache=1&amp;enableEncryption=1&amp;part=initsegment&amp;quality=v1080p" media="videotranscode?provider=Url&amp;docId=https%3a%2f%2fmetastoragecentralus.blob.core.windows.net%2ftestfiles%2fVideos%2fIgnite.wmv&amp;format=dash&amp;track=video&amp;inputFormat=mp4&amp;correlationid=394537d3-b4dc-4070-91bf-83a95f954794&amp;transcodeAhead=0&amp;disableCache=1&amp;enableEncryption=1&amp;part=mediasegment&amp;quality=v1080p&amp;segmentTime=$Time$&amp;videoDuration=125000">
+            <SegmentTemplate timescale="25000" initialization="videotranscode?provider=Url&amp;docId=https%3a%2f%2fmetastoragecentralus.blob.core.windows.net%2ftestfiles%2fVideos%2fbigbuckbunny_trailer.mov&amp;format=dash&amp;track=video&amp;inputFormat=mp4&amp;correlationid=02527ae5-8acd-426d-9f0f-8cba60ddcfb6&amp;transcodeAhead=0&amp;disableCache=1&amp;enableEncryption=1&amp;part=initsegment&amp;quality=v1080p" media="videotranscode?provider=Url&amp;docId=https%3a%2f%2fmetastoragecentralus.blob.core.windows.net%2ftestfiles%2fVideos%2fbigbuckbunny_trailer.mov&amp;format=dash&amp;track=video&amp;inputFormat=mp4&amp;correlationid=02527ae5-8acd-426d-9f0f-8cba60ddcfb6&amp;transcodeAhead=0&amp;disableCache=1&amp;enableEncryption=1&amp;part=mediasegment&amp;quality=v1080p&amp;segmentTime=$Time$&amp;videoDuration=125000">
                 <SegmentTimeline>
-                    <S d="125000" r="63" />
-                    <S d="44225" />
+                    <S d="125000" r="5" />
+                    <S d="74875" />
                 </SegmentTimeline>
             </SegmentTemplate>
             <Representation id="v240p" width="426" height="240" frameRate="25/1" bandwidth="360000" codecs="avc1.4d401e" />
