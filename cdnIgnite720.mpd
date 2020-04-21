@@ -1,0 +1,27 @@
+<MPD xmlns:sea="urn:mpeg:dash:schema:sea:2012" type="static" maxSegmentDuration="PT5.000S" profiles="urn:mpeg:dash:profile:isoff-live:2011" mediaPresentationDuration="PT0H0M321.769S" minBufferTime="PT4.500S" xmlns="urn:mpeg:DASH:schema:MPD:2011">
+    <BaseURL>https://cdn-metaservice.azureedge.net/transform/</BaseURL>
+    <Period>
+        <AdaptationSet id="0" contentType="audio" mimeType="audio/mp4" segmentAlignment="true" bitstreamSwitching="true" codecs="mp4a.40.2">
+            <SegmentTemplate timescale="44100" initialization="videotranscode?provider=Url&amp;docId=https%3a%2f%2fmetastoragecentralus.blob.core.windows.net%2ftestfiles%2fVideos%2fIgnite.wmv&amp;format=dash&amp;track=audio&amp;inputFormat=mp4&amp;correlationid=49d4b39d-8e1b-41b3-952a-7b0eeb732446&amp;transcodeAhead=0&amp;disableCache=1&amp;part=initsegment&amp;quality=audhigh" media="videotranscode?provider=Url&amp;docId=https%3a%2f%2fmetastoragecentralus.blob.core.windows.net%2ftestfiles%2fVideos%2fIgnite.wmv&amp;format=dash&amp;track=audio&amp;inputFormat=mp4&amp;correlationid=49d4b39d-8e1b-41b3-952a-7b0eeb732446&amp;transcodeAhead=0&amp;disableCache=1&amp;part=mediasegment&amp;quality=audhigh&amp;segmentTime=$Time$&amp;audioDuration=220500">
+                <SegmentTimeline>
+                    <S d="220500" r="63" />
+                    <S d="78013" />
+                </SegmentTimeline>
+            </SegmentTemplate>
+            <Representation id="audmed" audioSamplingRate="44100" bandwidth="128000" codecs="mp4a.40.2" />
+            <Representation id="audhigh" audioSamplingRate="44100" bandwidth="192000" codecs="mp4a.40.2" />
+        </AdaptationSet>
+        <AdaptationSet id="1" contentType="video" mimeType="video/mp4" segmentAlignment="true" bitstreamSwitching="true" maxFrameRate="25/1" maxWidth="1920" maxHeight="1080" codecs="avc1.4d0028">
+            <SegmentTemplate timescale="25000" initialization="videotranscode?provider=Url&amp;docId=https%3a%2f%2fmetastoragecentralus.blob.core.windows.net%2ftestfiles%2fVideos%2fIgnite.wmv&amp;format=dash&amp;track=video&amp;inputFormat=mp4&amp;correlationid=49d4b39d-8e1b-41b3-952a-7b0eeb732446&amp;transcodeAhead=0&amp;disableCache=1&amp;part=initsegment&amp;quality=v720p" media="videotranscode?provider=Url&amp;docId=https%3a%2f%2fmetastoragecentralus.blob.core.windows.net%2ftestfiles%2fVideos%2fIgnite.wmv&amp;format=dash&amp;track=video&amp;inputFormat=mp4&amp;correlationid=49d4b39d-8e1b-41b3-952a-7b0eeb732446&amp;transcodeAhead=0&amp;disableCache=1&amp;part=mediasegment&amp;quality=v720p&amp;segmentTime=$Time$&amp;videoDuration=125000">
+                <SegmentTimeline>
+                    <S d="125000" r="63" />
+                    <S d="44225" />
+                </SegmentTimeline>
+            </SegmentTemplate>
+            <Representation id="v240p" width="426" height="240" frameRate="25/1" bandwidth="360000" codecs="avc1.4d401e" />
+            <Representation id="v480p" width="852" height="480" frameRate="25/1" bandwidth="1200000" codecs="avc1.4d001f" />
+            <Representation id="v720p" width="1280" height="720" frameRate="25/1" bandwidth="2704000" codecs="avc1.4d001f" />
+            <Representation id="v1080p" width="1920" height="1080" frameRate="25/1" bandwidth="6072000" codecs="avc1.4d0028" />
+        </AdaptationSet>
+    </Period>
+</MPD>
