@@ -1,0 +1,27 @@
+<MPD xmlns:sea="urn:mpeg:dash:schema:sea:2012" type="static" maxSegmentDuration="PT5.000S" profiles="urn:mpeg:dash:profile:isoff-live:2011" mediaPresentationDuration="PT0H0M72.160S" minBufferTime="PT4.500S" xmlns="urn:mpeg:DASH:schema:MPD:2011">
+    <BaseURL>https://cdn-metaservice.azureedge.net/transform/</BaseURL>
+    <Period>
+        <AdaptationSet id="0" contentType="audio" mimeType="audio/mp4" segmentAlignment="true" bitstreamSwitching="true" codecs="mp4a.40.2">
+            <SegmentTemplate timescale="48000" initialization="videotranscode?provider=Url&amp;docId=https%3a%2f%2fmetastoragecentralus.blob.core.windows.net%2ftestfiles%2fVideos%2fjayanti.mp4&amp;format=dash&amp;track=audio&amp;inputFormat=mp4&amp;correlationid=0abe3160-3178-4962-b7d1-1d0a62483b60&amp;transcodeAhead=0&amp;disableCache=1&amp;part=initsegment&amp;quality=audhigh" media="videotranscode?provider=Url&amp;docId=https%3a%2f%2fmetastoragecentralus.blob.core.windows.net%2ftestfiles%2fVideos%2fjayanti.mp4&amp;format=dash&amp;track=audio&amp;inputFormat=mp4&amp;correlationid=0abe3160-3178-4962-b7d1-1d0a62483b60&amp;transcodeAhead=0&amp;disableCache=1&amp;part=mediasegment&amp;quality=audhigh&amp;segmentTime=$Time$&amp;audioDuration=240000">
+                <SegmentTimeline>
+                    <S d="240000" r="13" />
+                    <S d="103680" />
+                </SegmentTimeline>
+            </SegmentTemplate>
+            <Representation id="audmed" audioSamplingRate="48000" bandwidth="128000" codecs="mp4a.40.2" />
+            <Representation id="audhigh" audioSamplingRate="48000" bandwidth="192000" codecs="mp4a.40.2" />
+        </AdaptationSet>
+        <AdaptationSet id="1" contentType="video" mimeType="video/mp4" segmentAlignment="true" bitstreamSwitching="true" maxFrameRate="30/1" maxWidth="1920" maxHeight="1080" codecs="avc1.4d0028">
+            <SegmentTemplate timescale="30000" initialization="videotranscode?provider=Url&amp;docId=https%3a%2f%2fmetastoragecentralus.blob.core.windows.net%2ftestfiles%2fVideos%2fjayanti.mp4&amp;format=dash&amp;track=video&amp;inputFormat=mp4&amp;correlationid=0abe3160-3178-4962-b7d1-1d0a62483b60&amp;transcodeAhead=0&amp;disableCache=1&amp;part=initsegment&amp;quality=v480p" media="videotranscode?provider=Url&amp;docId=https%3a%2f%2fmetastoragecentralus.blob.core.windows.net%2ftestfiles%2fVideos%2fjayanti.mp4&amp;format=dash&amp;track=video&amp;inputFormat=mp4&amp;correlationid=0abe3160-3178-4962-b7d1-1d0a62483b60&amp;transcodeAhead=0&amp;disableCache=1&amp;part=mediasegment&amp;quality=v480p&amp;segmentTime=$Time$&amp;videoDuration=150000">
+                <SegmentTimeline>
+                    <S d="150000" r="13" />
+                    <S d="64800" />
+                </SegmentTimeline>
+            </SegmentTemplate>
+            <Representation id="v240p" width="426" height="240" frameRate="30/1" bandwidth="360000" codecs="avc1.4d401e" />
+            <Representation id="v480p" width="852" height="480" frameRate="30/1" bandwidth="1200000" codecs="avc1.4d001f" />
+            <Representation id="v720p" width="1280" height="720" frameRate="30/1" bandwidth="2704000" codecs="avc1.4d001f" />
+            <Representation id="v1080p" width="1920" height="1080" frameRate="30/1" bandwidth="6072000" codecs="avc1.4d0028" />
+        </AdaptationSet>
+    </Period>
+</MPD>
